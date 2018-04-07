@@ -1,0 +1,30 @@
+
+Description of types of tests. The text here below is taken from this Microsoft blog https://blogs.msdn.microsoft.com/bharry/2017/06/28/testing-in-a-cloud-delivery-cadence/
+
+	BDD -	Behavior-driven development (BDD) 
+			https://blogs.msdn.microsoft.com/rohithrajan/2018/03/15/asp-net-mvc-5-with-bdd-clean-or-onion-architecture-living-documentation-and-a-cicd-pipeline-from-scratch/
+    
+
+	L0 –	An L0 test is a classic Unit Test.  It exercises an API.  
+			It has no dependencies on the product being installed.  
+			It has no state other than what’s in the test.
+    
+	L1 –	An L1 is like a Unit Test, except it can rely on SQL Server being in the environment.  
+			Our product is very SQL Server dependent and, 
+			in my opinion, trying to mock SQL is unwise/impractical for the depth of dependency that we have.  
+			Also, of course, a bunch of our code is in SQLServer stored procs and we need to test that too.
+    
+	L2 –	An L2 test is written against a fully deployed TFS/Team Services “instance” but with some key things mocked out.  
+			The mocking is done to simplify testing and eliminate fragility.  
+			The best example is that we mock out authentication so we don’t have to deal with creating test identities, 
+			managing secrets, etc.  Some L2s are UI automation but only a smallish percentage.
+    
+	L3 –	An L3 test is an end-to-end functional test against a production TFS/VSTS instance.  
+			You might call it “Testing in Production”  Many of these are UI automation. 
+			The truth is that we’ve only recently gotten to the point that we’re ready for rolling out L3 tests and we only have a few.  
+			Over time, the count will grow some but it will always be a tiny fraction of L0 and L1.
+
+When are they run?
+ L0 and L1 tests as part of every Pull Request – so every checkin gets that much validation.  
+ We then run rolling runs of L2s all day. 
+ L3’s will (probably) be run as part of every release definition to validate post-deployment.

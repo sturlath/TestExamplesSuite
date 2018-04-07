@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>Core</AssemblyName>
+    <RootNamespace>TSOT.ToDoList.Core</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Helpers\Extensions\" />
+    <Folder Include="InfrastructureContracts\ServiceLayer\" />
+    <Folder Include="InfrastructureContracts\Repository\" />
+    <Folder Include="InfrastructureContracts\Proxies\" />
+    <Folder Include="Models\Dtos\" />
+    <Folder Include="Models\Responses\" />
+    <Folder Include="Models\Requests\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+
+</Project>
