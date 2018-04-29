@@ -9,7 +9,6 @@
   <ItemGroup>
     <Folder Include="Helpers\Extensions\" />
     <Folder Include="InfrastructureContracts\ServiceLayer\" />
-    <Folder Include="InfrastructureContracts\Repository\" />
     <Folder Include="InfrastructureContracts\Proxies\" />
     <Folder Include="Models\Dtos\" />
     <Folder Include="Models\Responses\" />

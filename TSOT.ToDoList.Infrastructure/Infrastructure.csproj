@@ -8,7 +8,10 @@
   <ItemGroup>
     <Folder Include="Proxies\" />
     <Folder Include="ServiceLayer\" />
-    <Folder Include="Repository\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TSOT.ToDoList.Core\Core.csproj" />
   </ItemGroup>
 
 </Project>

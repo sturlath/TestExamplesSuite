@@ -53,6 +53,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDoListApiTests", "TSOT.Te
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebTests", "TSOT.Tests\L1\TSOT.ToDoList.Tests.L1.WebTests\WebTests.csproj", "{50C89A8D-C273-4C90-B54F-B152159BB43E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrationTests", "TSOT.ToDoList.L2.IntegrationTests\IntegrationTests.csproj", "{7A074685-AFBA-4368-B3BE-72643BD64A7B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -101,6 +103,10 @@ Global
 		{50C89A8D-C273-4C90-B54F-B152159BB43E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50C89A8D-C273-4C90-B54F-B152159BB43E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50C89A8D-C273-4C90-B54F-B152159BB43E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A074685-AFBA-4368-B3BE-72643BD64A7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A074685-AFBA-4368-B3BE-72643BD64A7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A074685-AFBA-4368-B3BE-72643BD64A7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A074685-AFBA-4368-B3BE-72643BD64A7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -121,6 +127,7 @@ Global
 		{ED599BB8-D6EA-4747-8551-24A9B97A4E55} = {CAB33D38-5037-445E-A6CB-1C0AC4F3A69D}
 		{C3C8972D-185E-495E-BD83-36592AEEA6DF} = {CAB33D38-5037-445E-A6CB-1C0AC4F3A69D}
 		{50C89A8D-C273-4C90-B54F-B152159BB43E} = {CAB33D38-5037-445E-A6CB-1C0AC4F3A69D}
+		{7A074685-AFBA-4368-B3BE-72643BD64A7B} = {FF3FE733-8959-450F-B38D-E6467AF7A192}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6AD0B5CF-18D7-4AEA-B28F-864CD396AEFF}
